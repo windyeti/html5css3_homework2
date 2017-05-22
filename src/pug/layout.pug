@@ -1,0 +1,20 @@
+include _common/variables
+include _common/mixin
+
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		block title
+			title Заголовок по умолчанию
+		link(rel="stylesheet" href="css/main.css")
+	body
+		block header
+			include _common/header
+		block menu
+			include _common/menu
+		block main
+		block footer
+			include _common/footer
+		script(src="js/main.js")
+	

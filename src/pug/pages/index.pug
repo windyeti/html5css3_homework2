@@ -1,0 +1,155 @@
+extends ../layout
+
+block title
+	title Главная страница продукта
+
+block header
+	header.header
+		.conatainer
+			h1.header__head Product name
+			ul.header__items
+				each item, inx in listInHeader
+					li.header__item
+						a.header__link(href= inx)= item
+			figure.header__logo
+				img.header__img(src='images/logo.svg')
+				figcaption.header__logo__text Логотип компании "Воздух без ГМО"
+block main
+	main.main
+		.conatainer
+			section.about
+				.about__text
+					h2.about__head
+					p.about__parag.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.
+					p.about__parag.
+						Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
+				.about__img(src='images/product.jpg')
+			section.productPlus
+				h2.productPlus__head
+				.productPlus__items
+					.productPlus__item.
+						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+					.productPlus__item.
+						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+				.productPlus__items
+					.productPlus__item.
+						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+					.productPlus__item.
+						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+				.productPlus__items
+					.productPlus__item.
+						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+					.productPlus__item.
+						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+			section.description
+				h2.description__head Screenshots
+				.description__items
+					article.description__item
+						img.description__item__img(src='images/prodct01.jpg')
+						h3.description__item__head The description for the image
+						.description__item__text.
+							Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
+					article.description__item
+						img.description__item__img(src='images/prodct02.jpg')
+						h3.description__item__head The description for the image
+						.description__item__text.
+							Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
+				.description__items
+					article.description__item
+						img.description__item__img(src='images/prodct03.jpg')
+						h3.description__item__head The description for the image
+						.description__item__text.
+							Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
+					article.description__item
+						img.description__item__img(src='images/prodct04.jpg')
+						h3.description__item__head The description for the image
+						.description__item__text.
+							Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
+			section.reviews
+				h2.reviews Reviews
+				.reviews__items
+					article.reviews__item
+						img.reviews__img(src='reviews01.jpg')
+						.reviews__text
+							| Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+							span.reviews__author Lourens S.
+					article.reviews__item
+						img.reviews__img(src='reviews02.jpg')
+						.reviews__text
+							| Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+							span.reviews__author Lourens S.
+				.reviews__items
+					article.reviews__item
+						img.reviews__img(src='reviews03.jpg')
+						.reviews__text
+							| Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+							span.reviews__author Lourens S.
+					article.reviews__item
+						img.reviews__img(src='reviews04.jpg')
+						.reviews__text
+							| Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+							span.reviews__author Lourens S.
+			section.buy
+				h2.buy__head Buy it now
+				.buy__items
+					.buy__item
+						.buy__item__head Standart
+						.buy__item__price $100
+						ul.buy__item__conditions
+							li.buy__item__condition 1. Porro officia cumque sint deleniti; 
+							li.buy__item__condition 2. Тemo facere rem vitae odit;
+							li.buy__item__condition 3. Cum odio, iste quia doloribus autem;
+							li.buy__item__condition 4. Aperiam nulla ea neque.
+						button.buy__buy buy
+					.buy__item
+						.buy__item__head Premium
+						.buy__item__price $150
+						ul.buy__item__conditions
+							li.buy__item__condition 1. Porro officia cumque sint deleniti; 
+							li.buy__item__condition 2. Тemo facere rem vitae odit;
+							li.buy__item__condition 3. Cum odio, iste quia doloribus autem;
+							li.buy__item__condition 4. Aperiam nulla ea neque.
+							li.buy__item__condition 5. Porro officia cumque sint deleniti; 
+							li.buy__item__condition 6. Тemo facere rem vitae odit;
+							li.buy__item__condition 7. Cum odio, iste quia doloribus autem; 
+							li.buy__item__condition 8. Aperiam nulla ea neque.
+						button.buy__buy buy
+					.buy__item
+						.buy__item__head Lux
+						.buy__item__price $200
+						ul.buy__item__conditions
+							li.buy__item__condition 1. Porro officia cumque sint deleniti; 
+							li.buy__item__condition 2. Тemo facere rem vitae odit;
+							li.buy__item__condition 3. Cum odio, iste quia doloribus autem;
+							li.buy__item__condition 4. Aperiam nulla ea neque.
+							li.buy__item__condition 5. Porro officia cumque sint deleniti; 
+							li.buy__item__condition 6. Тemo facere rem vitae odit;
+							li.buy__item__condition 7. Cum odio, iste quia doloribus autem; 
+							li.buy__item__condition 8. Aperiam nulla ea neque.
+							li.buy__item__condition 9. Porro officia cumque sint deleniti; 
+							li.buy__item__condition 10. Тemo facere rem vitae odit;
+							li.buy__item__condition 11. Cum odio, iste quia doloribus autem; 
+							li.buy__item__condition 12. Aperiam nulla ea neque.
+						button.buy__buy buy
+
+block footer
+	footer.footer
+		.conatainer
+			h2.footer__head
+			form.contacts__form
+				input.contacts__form__name
+				input.contacts__form__email
+				textarea.contacts__form__messsage
+				button(type='submit').contacts__form__submit
+			.contacts
+				.contacts__skype
+				.contacts__icq
+				.contacts__email
+				.contacts__tel
+				.contacts__social
+					ul.contacts__items
+						each item, key in social
+							li.contacts__item
+								a.contacts__link(class='contacts__link_'+item href=key)= item
+
