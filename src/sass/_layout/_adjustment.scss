@@ -1,0 +1,19 @@
+%clearfix {
+	&.clearfix:before,
+	&.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+	}
+
+	&.clearfix:after {
+	    clear: both;
+	}
+}
+
+.container {
+	max-width: 1280px;
+	padding: 0 4%;
+	margin: 0 auto;
+	color: $darkblue;
+	@extend %clearfix;
+}

@@ -5,92 +5,105 @@ block title
 
 block header
 	header.header
-		.conatainer
+		.container(class='clearfix')
+			figure.header__logo
+				img.header__img(src='images/logo.svg')
+				figcaption.header__logo__text Логотип компании "Воздух без ГМО"
 			h1.header__head Product name
 			ul.header__items
 				each item, inx in listInHeader
 					li.header__item
-						a.header__link(href= inx)= item
-			figure.header__logo
-				img.header__img(src='images/logo.svg')
-				figcaption.header__logo__text Логотип компании "Воздух без ГМО"
+						a.header__link(href='#'+inx)= item
 block main
 	main.main
-		.conatainer
-			section.about
+		section.about(class='clearfix')
+			.container(class='clearfix')
 				.about__text
-					h2.about__head
+					h2.about__head About your product
 					p.about__parag.
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.
 					p.about__parag.
 						Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
-				.about__img(src='images/product.jpg')
-			section.productPlus
-				h2.productPlus__head
-				.productPlus__items
+				.about__blockImg
+					img.about__img(src='images/line3.jpg' alt='Продукт')
+		section.productPlus(class='clearfix')
+			.container(class='clearfix')
+				h2.productPlus__head Dignity and pluses product
+				.productPlus__items(class='clearfix')
 					.productPlus__item.
 						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
 					.productPlus__item.
 						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
-				.productPlus__items
+				.productPlus__items(class='clearfix')
 					.productPlus__item.
 						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
 					.productPlus__item.
 						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
-				.productPlus__items
+				.productPlus__items(class='clearfix')
 					.productPlus__item.
 						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
 					.productPlus__item.
 						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
-			section.description
+		section.description(class='clearfix')
+			.container(class='clearfix')
 				h2.description__head Screenshots
-				.description__items
+				.description__items(class='clearfix')
 					article.description__item
-						img.description__item__img(src='images/prodct01.jpg')
+						.description__item__blockimg
+							img.description__item__img(src='images/product01.jpg')
 						h3.description__item__head The description for the image
 						.description__item__text.
 							Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
 					article.description__item
-						img.description__item__img(src='images/prodct02.jpg')
+						.description__item__blockimg
+							img.description__item__img(src='images/product02.jpg')
 						h3.description__item__head The description for the image
 						.description__item__text.
 							Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
-				.description__items
+				.description__items(class='clearfix')
 					article.description__item
-						img.description__item__img(src='images/prodct03.jpg')
+						.description__item__blockimg
+							img.description__item__img(src='images/product03.jpg')
 						h3.description__item__head The description for the image
 						.description__item__text.
 							Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
 					article.description__item
-						img.description__item__img(src='images/prodct04.jpg')
+						.description__item__blockimg
+							img.description__item__img(src='images/product04.jpg')
 						h3.description__item__head The description for the image
 						.description__item__text.
 							Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
-			section.reviews
-				h2.reviews Reviews
+		section.reviews
+			.container(class='clearfix')
+				h2.reviews__head Reviews
 				.reviews__items
 					article.reviews__item
-						img.reviews__img(src='reviews01.jpg')
+						.reviews__blockImg
+							img.reviews__img(src='images/reviews01.jpg')
 						.reviews__text
 							| Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
 							span.reviews__author Lourens S.
 					article.reviews__item
-						img.reviews__img(src='reviews02.jpg')
+						.reviews__blockImg
+							img.reviews__img(src='images/reviews02.jpg')
 						.reviews__text
 							| Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
 							span.reviews__author Lourens S.
 				.reviews__items
 					article.reviews__item
-						img.reviews__img(src='reviews03.jpg')
+						.reviews__blockImg
+							img.reviews__img(src='images/reviews03.jpg')
 						.reviews__text
 							| Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
 							span.reviews__author Lourens S.
 					article.reviews__item
-						img.reviews__img(src='reviews04.jpg')
+						.reviews__blockImg
+							img.reviews__img(src='images/reviews04.jpg')
 						.reviews__text
 							| Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
 							span.reviews__author Lourens S.
-			section.buy
+		section.buy
+			.container(class='clearfix')
 				h2.buy__head Buy it now
 				.buy__items
 					.buy__item
@@ -135,7 +148,7 @@ block main
 
 block footer
 	footer.footer
-		.conatainer
+		.container
 			h2.footer__head
 			form.contacts__form
 				input.contacts__form__name
@@ -147,9 +160,9 @@ block footer
 				.contacts__icq
 				.contacts__email
 				.contacts__tel
-				.contacts__social
-					ul.contacts__items
-						each item, key in social
-							li.contacts__item
-								a.contacts__link(class='contacts__link_'+item href=key)= item
+				ul.social__items
+					each item, key in social
+						li.social__item
+							a.social__link(class='contacts__link_'+item href='http://www.'+key)= item
+
 
