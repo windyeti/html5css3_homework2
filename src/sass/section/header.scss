@@ -7,7 +7,7 @@
 }
 .header__logo {
 	float: right;
-	outline: 1px solid #fff;
+	// outline: 1px solid #fff;
 	margin-top: 9px;
 	margin: 0;
 	width: 40%;
@@ -17,6 +17,9 @@
 		display: block;
 		margin: 0 auto;
 	}
+}
+.header__logo__text {
+	text-indent: -9999px;
 }
 .header__head {
 	font-size: 375%;
@@ -54,7 +57,7 @@
 	float: right;
 	margin: 34px 0px 0 0;
 	width: 36%;
-	outline: 1px solid #000;
+	// outline: 1px solid #000;
 }
 .about__img {
 	width: 100%;
@@ -76,7 +79,7 @@
 .productPlus {
 	padding-bottom: 36px;
 	background-color: $lightgray;
-	outline: 1px solid #000;
+	// outline: 1px solid #000;
 	@extend %clearfix;
 }
 .productPlus__head {
@@ -84,13 +87,14 @@
 	font-weight: 400;
 	line-height: 36px;
 	text-align: center;
-    margin: 42px 0px 7px 0;
+    margin: 42px 0px 0px 0;
 }
 .productPlus__items {
-	margin-bottom: 11px;
+	margin-top: 25px;
 	@extend %clearfix;
 }
 .productPlus__item {
+	position: relative;
 	box-sizing: border-box;
 	width: 50%;
 	float: left;
@@ -98,20 +102,25 @@
 	line-height: 150%;
 	&:before {
 		content: ' ';
-		display: inline-block;
+		display: block;
 		background: url(../images/plus.png);
-		width: 34px;
+		width: 32px;
 		height: 32px;
-		margin-left: -34px;
-		position: relative;
-		top: 21px;
-		left: -8px;
+		position: absolute;
+		top: 4px;
+		left: 1px;
+	}
+	&:nth-child(1) {
+		padding-right: 16px;
+	}
+	&:nth-last-child(1) {
+		padding-left: 42px;
 	}
 }
 .description {
 	@extend %clearfix;
 	// outline: 1px solid #000;
-	padding: 20px 0 24px;
+	padding: 20px 0 29px;
 }
 .description__head {
 	font-size: 30px;
@@ -120,22 +129,29 @@
 	text-align: center;
 	margin-right: -27px;
 	margin-bottom: 23px;
+	margin-top: 37px;
+	margin-bottom: 22px;
 }
 .description__items {
 	@extend %clearfix;
-	margin-bottom: 20px;
+	margin-bottom: 17px;
 }
 .description__item {
 	box-sizing: border-box;
 	float: left;
 	width: 50%;
-	padding-right: 16px;
+	&:nth-child(1) {
+		padding-right: 16px;
+	}
+	&:nth-last-child(1) {
+		padding-left: 2px;
+	}
 }
 .description__item__blockimg {
 	float: left;
 	width: 200px;
 	height: 150px;
-	outline: 1px solid #000;
+	// outline: 1px solid #000;
 	margin-right: 13px;
 	margin-top: 7px;
 }
@@ -151,9 +167,24 @@
 }
 .reviews {
 	// padding-top: 10px;
-	padding-bottom: 36px;
+	padding-bottom: 28px;
 	background-color: $lightgray;
 	@extend %clearfix;
+}
+.reviews__items {
+	@extend %clearfix;
+	padding-bottom: 17px;
+}
+.reviews__item {
+	box-sizing: border-box;
+	float: left;
+	width: 50%;
+	&:nth-child(1) {
+		padding-right: 18px;
+	}
+	&:nth-last-child(1) {
+		padding-left: 18px;
+	}
 }
 .reviews__head {
 	font-size: 30px;
@@ -163,6 +194,7 @@
 	margin-top: 44px;
 }
 .reviews__blockImg {
+	float: left;
 	width: 75px;
 	height: 75px;
 }
@@ -173,9 +205,195 @@
 	// background: $darkblue;
 }
 .reviews__text {
+	position: relative;
 	color: $textcolor;
+	background-color: $darkgray;
 	font-size: 14px;
 	font-style: italic;
 	line-height: 18px;
 	text-align: left;
+	padding: 16px;
+	margin-left: 101px;
+	border-radius: 5px;
+	&:before {
+		content: " ";
+		border: 14px solid transparent;
+		border-right: 14px solid $darkgray;
+		position: absolute;
+		top: 28px;
+		left: -28px;
+	}
+}
+.reviews__author {
+	font-style: normal;
+	color: #989898;
+	padding-top: 7px;
+}
+.buy {
+	// width: 100%;
+	// margin: 0 auto;
+	text-align: center;
+	padding-bottom: 7px;
+}
+.buy__head {
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	text-align: center;
+	margin-top: 44px;
+	margin-bottom: 28px;
+}
+.buy__item {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 25.6%;
+	background: $darkblue;
+	border-radius: 5px;
+	color: #fff;
+	padding: 10px 20px 20px;
+	margin: 0 20px;
+}
+.buy__item__head {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.buy__item__price {
+	height: 71px;
+	background: #fff;
+	margin: 0 -15px;
+	color: $darkblue;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: center;
+	line-height: 71px;
+}
+.buy__item__conditions {
+	text-align: left;
+	padding-left: 15px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+.buy__button {
+	height: 40px;
+	text-transform: uppercase;
+	width: 100%;
+	border: none;
+	border-radius: 5px;
+	background: #fff;
+	padding: 10px 0 6px;
+	cursor: pointer;
+	transition: all 1s;
+	&:hover {
+		background: $darkblue;
+		border: 1px solid #fff;
+		color: #fff;
+	}
+}
+.footer {
+	background: $darkblue;
+	padding-top: 20px;
+	padding-bottom: 49px;
+	margin-top: 44px;
+	@extend %clearfix;
+}
+.footer__head {
+	color: #fff;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	text-align: center;
+	margin-bottom: 24px;
+}
+.footer .container {
+	width: 785px;
+	margin: 0 auto;
+}
+.contacts__form {
+	float: left;
+	// outline: 1px solid red;
+	width: 500px;
+}
+.contacts__form__name, .contacts__form__email, .contacts__form__messsage {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 20px;
+	padding-left: 10px;
+}
+.contacts__form__messsage {
+	height: 170px;
+	padding-top: 10px;
+}
+.contacts__form__submit {
+	display: block;
+	width: 140px;
+	height: 40px;
+	margin: 0 auto;
+	border-radius: 5px;
+	border: none;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: center;
+	color: $darkblue;
+	background: #fff;
+	text-transform: uppercase;
+	padding: 8px 0	6px;
+}
+.contacts__items {
+	color: #fff;
+	margin-left: 545px;
+}
+.contacts__item {
+	position: relative;
+	padding: 6px 0 18px 34px;
+	&:before {
+		display: block;
+		position: absolute;
+		top: -2px;
+		left: -4px;
+		content: " ";
+		width: 38px;
+		height: 34px;
+	}
+}
+@include contacts($skypeicq);
+.contacts__link {
+	text-decoration: none;
+	color: #fff;
+	&:hover {
+		color: #09f2fa;
+	}
+}
+.social__items {
+	list-style-type: none;
+	margin: 0;
+	margin-top: 20px;
+	padding: 0;
+	font-size: 0;
+}
+.social__item {
+	display: inline-block;
+}
+.social__link {
+	display: block;
+	text-decoration: none;
+	width: 48px;
+	height: 44px;
+}
+@include social($socials);
+.copyright {
+	text-align: center;
+	color: $darkblue;
+	font-size: 80%;
+	padding: 8px;
 }

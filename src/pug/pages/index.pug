@@ -9,7 +9,7 @@ block header
 			figure.header__logo
 				img.header__img(src='images/logo.svg')
 				figcaption.header__logo__text Логотип компании "Воздух без ГМО"
-			h1.header__head Product name
+			h1.header__head Всё из воздуха
 			ul.header__items
 				each item, inx in listInHeader
 					li.header__item
@@ -76,32 +76,32 @@ block main
 		section.reviews
 			.container(class='clearfix')
 				h2.reviews__head Reviews
-				.reviews__items
+				.reviews__items(class='clearfix')
 					article.reviews__item
 						.reviews__blockImg
 							img.reviews__img(src='images/reviews01.jpg')
 						.reviews__text
 							| Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-							span.reviews__author Lourens S.
+							.reviews__author Lourens S.
 					article.reviews__item
 						.reviews__blockImg
 							img.reviews__img(src='images/reviews02.jpg')
 						.reviews__text
 							| Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-							span.reviews__author Lourens S.
-				.reviews__items
+							.reviews__author Lourens S.
+				.reviews__items(class='clearfix')
 					article.reviews__item
 						.reviews__blockImg
 							img.reviews__img(src='images/reviews03.jpg')
 						.reviews__text
 							| Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-							span.reviews__author Lourens S.
+							.reviews__author Lourens S.
 					article.reviews__item
 						.reviews__blockImg
 							img.reviews__img(src='images/reviews04.jpg')
 						.reviews__text
 							| Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-							span.reviews__author Lourens S.
+							.reviews__author Lourens S.
 		section.buy
 			.container(class='clearfix')
 				h2.buy__head Buy it now
@@ -109,60 +109,63 @@ block main
 					.buy__item
 						.buy__item__head Standart
 						.buy__item__price $100
-						ul.buy__item__conditions
-							li.buy__item__condition 1. Porro officia cumque sint deleniti; 
-							li.buy__item__condition 2. Тemo facere rem vitae odit;
-							li.buy__item__condition 3. Cum odio, iste quia doloribus autem;
-							li.buy__item__condition 4. Aperiam nulla ea neque.
-						button.buy__buy buy
+						ol.buy__item__conditions
+							li.buy__item__condition Porro officia cumque sint deleniti; 
+							li.buy__item__condition Тemo facere rem vitae odit;
+							li.buy__item__condition Cum odio, iste quia doloribus autem;
+							li.buy__item__condition Aperiam nulla ea neque.
+						button.buy__button buy
 					.buy__item
 						.buy__item__head Premium
 						.buy__item__price $150
-						ul.buy__item__conditions
-							li.buy__item__condition 1. Porro officia cumque sint deleniti; 
-							li.buy__item__condition 2. Тemo facere rem vitae odit;
-							li.buy__item__condition 3. Cum odio, iste quia doloribus autem;
-							li.buy__item__condition 4. Aperiam nulla ea neque.
-							li.buy__item__condition 5. Porro officia cumque sint deleniti; 
-							li.buy__item__condition 6. Тemo facere rem vitae odit;
-							li.buy__item__condition 7. Cum odio, iste quia doloribus autem; 
-							li.buy__item__condition 8. Aperiam nulla ea neque.
-						button.buy__buy buy
+						ol.buy__item__conditions
+							li.buy__item__condition Porro officia cumque sint deleniti; 
+							li.buy__item__condition Тemo facere rem vitae odit;
+							li.buy__item__condition Cum odio, iste quia doloribus autem;
+							li.buy__item__condition Aperiam nulla ea neque.
+							li.buy__item__condition Porro officia cumque sint deleniti; 
+							li.buy__item__condition Тemo facere rem vitae odit;
+							li.buy__item__condition Cum odio, iste quia doloribus autem; 
+							li.buy__item__condition Aperiam nulla ea neque.
+						button.buy__button buy
 					.buy__item
 						.buy__item__head Lux
 						.buy__item__price $200
-						ul.buy__item__conditions
-							li.buy__item__condition 1. Porro officia cumque sint deleniti; 
-							li.buy__item__condition 2. Тemo facere rem vitae odit;
-							li.buy__item__condition 3. Cum odio, iste quia doloribus autem;
-							li.buy__item__condition 4. Aperiam nulla ea neque.
-							li.buy__item__condition 5. Porro officia cumque sint deleniti; 
-							li.buy__item__condition 6. Тemo facere rem vitae odit;
-							li.buy__item__condition 7. Cum odio, iste quia doloribus autem; 
-							li.buy__item__condition 8. Aperiam nulla ea neque.
-							li.buy__item__condition 9. Porro officia cumque sint deleniti; 
-							li.buy__item__condition 10. Тemo facere rem vitae odit;
-							li.buy__item__condition 11. Cum odio, iste quia doloribus autem; 
-							li.buy__item__condition 12. Aperiam nulla ea neque.
-						button.buy__buy buy
+						ol.buy__item__conditions
+							li.buy__item__condition Porro officia cumque sint deleniti; 
+							li.buy__item__condition Тemo facere rem vitae odit;
+							li.buy__item__condition Cum odio, iste quia doloribus autem;
+							li.buy__item__condition Aperiam nulla ea neque.
+							li.buy__item__condition Porro officia cumque sint deleniti; 
+							li.buy__item__condition Тemo facere rem vitae odit;
+							li.buy__item__condition Cum odio, iste quia doloribus autem; 
+							li.buy__item__condition Aperiam nulla ea neque.
+							li.buy__item__condition Porro officia cumque sint deleniti; 
+							li.buy__item__condition Тemo facere rem vitae odit;
+							li.buy__item__condition Cum odio, iste quia doloribus autem; 
+							li.buy__item__condition Aperiam nulla ea neque.
+						button.buy__button buy
 
 block footer
-	footer.footer
+	footer.footer(class='clearfix')
 		.container
-			h2.footer__head
+			h2.footer__head Contacts
 			form.contacts__form
-				input.contacts__form__name
-				input.contacts__form__email
-				textarea.contacts__form__messsage
-				button(type='submit').contacts__form__submit
-			.contacts
-				.contacts__skype
-				.contacts__icq
-				.contacts__email
-				.contacts__tel
+				input.contacts__form__name(placeholder='Your name:')
+				input.contacts__form__email(placeholder='Your email:')
+				textarea.contacts__form__messsage(placeholder='Your message:')
+				button(type='submit').contacts__form__submit send
+			.contacts__items
+				.contacts__item.contacts_skype simpleair
+				.contacts__item.contacts_icq 234567
+				.contacts__item.contacts_email
+					a.contacts__link(href='mailto:moneyfornothing@info.com') moneyfornothing@info.com
+				.contacts__item.contacts_tel +8 800 777 88 99
 				ul.social__items
 					each item, key in social
 						li.social__item
-							a.social__link(class='contacts__link_'+item href='http://www.'+key)= item
+							a.social__link(class='contacts__link_'+item href='http://www.'+key)
+	footer.footerFooter 
+		.copyright copyright 2017 и все такое
 
 

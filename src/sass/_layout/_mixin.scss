@@ -1,0 +1,27 @@
+@mixin contacts($contacts) {
+	$posx : 0px;
+	@each $contact in $contacts {
+		.contacts_#{$contact} {
+			&:before {
+				background: url("../images/icons.png") #{$posx} -92px no-repeat;
+				$posx: $posx - 38;
+				@debug $posx;
+			}
+		}
+	}
+}
+@mixin social($socials) {
+	$posx : 0px;
+	$posy : 44px;
+	@each $social in $socials {
+		.contacts__link_#{$social} {
+			background: url("../images/icons.png") #{$posx} 0 no-repeat;
+			&:hover {
+			background: url("../images/icons.png") #{$posx} -45px no-repeat;
+			}
+		}
+		$posx: $posx - 48;
+		@debug $posx;
+
+	}
+}
