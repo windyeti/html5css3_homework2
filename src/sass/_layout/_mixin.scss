@@ -1,11 +1,19 @@
 @mixin contacts($contacts) {
-	$posx : 0px;
+	$posy : 0px;
 	@each $contact in $contacts {
 		.contacts_#{$contact} {
-			&:before {
-				background: url("../images/icons.png") #{$posx} -92px no-repeat;
-				$posx: $posx - 38;
-				@debug $posx;
+			background: url("../images/contacts.png") 0 #{$posy} no-repeat;
+			@if $contact == email {
+				cursor: pointer;
+			}
+			$posy : $posy - 34;
+			@debug $posy;
+			&:hover {
+				color: #09f2fa;
+				background: url("../images/contacts.png") 0 #{$posy - 102} no-repeat;
+			}
+			&:hover .contacts__link{
+				color: #09f2fa;
 			}
 		}
 	}

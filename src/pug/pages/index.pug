@@ -7,8 +7,9 @@ block header
 	header.header
 		.container(class='clearfix')
 			figure.header__logo
-				img.header__img(src='images/logo.svg')
-				figcaption.header__logo__text Логотип компании "Воздух без ГМО"
+				a.header__logo__link(href='index.html')
+					img.header__img(src='images/logo.svg')
+					figcaption.header__logo__text Логотип компании "Воздух без ГМО"
 			h1.header__head Всё из воздуха
 			ul.header__items
 				each item, inx in listInHeader
@@ -16,19 +17,19 @@ block header
 						a.header__link(href='#'+inx)= item
 block main
 	main.main
-		section.about(class='clearfix')
+		section.about#about(class='clearfix')
 			.container(class='clearfix')
 				.about__text
-					h2.about__head About your product
+					h2.about__head Лучший атмосферный слой
 					p.about__parag.
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.
 					p.about__parag.
 						Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
 				.about__blockImg
 					img.about__img(src='images/line3.jpg' alt='Продукт')
-		section.productPlus(class='clearfix')
+		section.productPlus#productPlus(class='clearfix')
 			.container(class='clearfix')
-				h2.productPlus__head Dignity and pluses product
+				h2.productPlus__head Сплошные плюсы и бонусы
 				.productPlus__items(class='clearfix')
 					.productPlus__item.
 						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
@@ -44,64 +45,64 @@ block main
 						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
 					.productPlus__item.
 						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
-		section.description(class='clearfix')
+		section.description#description(class='clearfix')
 			.container(class='clearfix')
-				h2.description__head Screenshots
+				h2.description__head Коротко о главном
 				.description__items(class='clearfix')
 					article.description__item
 						.description__item__blockimg
-							img.description__item__img(src='images/product01.jpg')
+							img.description__item__img(src='images/product01.jpg' alt='Продукт вид')
 						h3.description__item__head The description for the image
 						.description__item__text.
 							Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
 					article.description__item
 						.description__item__blockimg
-							img.description__item__img(src='images/product02.jpg')
+							img.description__item__img(src='images/product02.jpg' alt='Продукт вид')
 						h3.description__item__head The description for the image
 						.description__item__text.
 							Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
 				.description__items(class='clearfix')
 					article.description__item
 						.description__item__blockimg
-							img.description__item__img(src='images/product03.jpg')
+							img.description__item__img(src='images/product03.jpg' alt='Продукт вид')
 						h3.description__item__head The description for the image
 						.description__item__text.
 							Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
 					article.description__item
 						.description__item__blockimg
-							img.description__item__img(src='images/product04.jpg')
+							img.description__item__img(src='images/product04.jpg' alt='Продукт вид')
 						h3.description__item__head The description for the image
 						.description__item__text.
 							Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
-		section.reviews
+		section.reviews#reviews
 			.container(class='clearfix')
-				h2.reviews__head Reviews
+				h2.reviews__head Отзывы
 				.reviews__items(class='clearfix')
 					article.reviews__item
 						.reviews__blockImg
-							img.reviews__img(src='images/reviews01.jpg')
+							img.reviews__img(src='images/reviews01.jpg' alt='Персона №1')
 						.reviews__text
-							| Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-							.reviews__author Lourens S.
+							| Всегда мечтал о таком воздушном коктейле, в котором была бы смешана атмосфера Буэнос-Аэроса, Северное сияние и графическая надстройка над DOS.
+							.reviews__author Билл Голкипер
 					article.reviews__item
 						.reviews__blockImg
-							img.reviews__img(src='images/reviews02.jpg')
+							img.reviews__img(src='images/reviews02.jpg' alt='Персона №2')
 						.reviews__text
-							| Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-							.reviews__author Lourens S.
+							| Во время проектирования АйФона I, один из сотрудников открыл баночку с Облаком. Нам ничего не оставалось делать, кроме как создать такой сервис.
+							.reviews__author St. Job
 				.reviews__items(class='clearfix')
 					article.reviews__item
 						.reviews__blockImg
-							img.reviews__img(src='images/reviews03.jpg')
+							img.reviews__img(src='images/reviews03.jpg' alt='Персона №3')
 						.reviews__text
-							| Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-							.reviews__author Lourens S.
+							| Я тоже взял себе на днюху пару баночек из Колумбии, так сказать, на замену воздушным шарикам. Доволен. 
+							.reviews__author Just Iggi
 					article.reviews__item
 						.reviews__blockImg
-							img.reviews__img(src='images/reviews04.jpg')
+							img.reviews__img(src='images/reviews04.jpg' alt='Персона №4')
 						.reviews__text
-							| Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-							.reviews__author Lourens S.
+							| Не гонялся бы ты, поп, за дешевизной, а потреблял нормальный продукт из Китая.
+							.reviews__author Лама
 		section.buy
 			.container(class='clearfix')
 				h2.buy__head Buy it now
@@ -150,7 +151,7 @@ block footer
 	footer.footer(class='clearfix')
 		.container
 			h2.footer__head Contacts
-			form.contacts__form
+			form.contacts__form(method='get' action='#' name='contacts')
 				input.contacts__form__name(placeholder='Your name:')
 				input.contacts__form__email(placeholder='Your email:')
 				textarea.contacts__form__messsage(placeholder='Your message:')
@@ -166,6 +167,6 @@ block footer
 						li.social__item
 							a.social__link(class='contacts__link_'+item href='http://www.'+key)
 	footer.footerFooter 
-		.copyright copyright 2017 и все такое
+		.copyright &#169; copyright 2017 и все такое
 
 

@@ -19,7 +19,8 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "html5shiv": "^3.7.3"
   },
   "devDependencies": {
     "normalize-css": "^5.0.0"
