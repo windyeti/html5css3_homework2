@@ -33,3 +33,11 @@
 
 	}
 }
+
+@mixin transform($ref) {
+	-web-kit-transform: $ref;
+	-moz-transform: $ref;
+	-ms-transform: $ref;
+	-o-transform: $ref;
+	transform: $ref;
+}

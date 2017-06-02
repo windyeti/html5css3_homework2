@@ -1,3 +1,7 @@
+body {
+	font-family: 'Lato';
+	color: $gray;
+}
 %clearfix {
 	&.clearfix:before,
 	&.clearfix:after {
@@ -9,11 +13,33 @@
 	    clear: both;
 	}
 }
-
+%firstSecond {
+	.first {
+		color: $green;
+		transition: all 1s;
+	}
+	.second {
+		color: $darkgreen;
+		transition: all 1s;
+	}
+	&:hover {
+		.first {
+			color:  $darkgreen;
+		}
+		.second {
+			color: $green;
+		}
+	}
+}
 .container {
-	max-width: 1280px;
-	padding: 0 4%;
+	box-sizing: border-box;
+	max-width: 1290px;
+	padding: 0 60px;
 	margin: 0 auto;
 	color: $darkblue;
 	@extend %clearfix;
+	.row {
+		@extend %clearfix;
+		// margin-bottom: 142px;
+	}
 }

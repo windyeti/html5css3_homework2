@@ -6,167 +6,66 @@ block title
 block header
 	header.header
 		.container(class='clearfix')
-			figure.header__logo
-				a.header__logo__link(href='index.html')
-					img.header__img(src='images/logo.svg')
-					figcaption.header__logo__text Логотип компании "Воздух без ГМО"
-			h1.header__head Всё из воздуха
-			ul.header__items
-				each item, inx in listInHeader
-					li.header__item
-						a.header__link(href='#'+inx)= item
+			.row(class='clearfix')
+				.logo
+					a.logo__link(href='#')
+						span.firstParth Yok
+						span.secondParth Ngalam
+				.avatar
+					a.avatar__link(href='#')
+						img.avatar__img(src='images/avatar.jpg' alt='Семен Семеныч')
+				+header_menu
+			h1.head 
+				span.first LETS 
+				span.second GET LOST
+			.slogan
+				.string Malang will never dissapointed you.
+				.string.
+					From every step you took you will be amazed and suddenly fallin love with Malang
+			.button SET ITTINERY NOW
 block main
 	main.main
-		section.about#about(class='clearfix')
+		section.about
 			.container(class='clearfix')
-				.about__text
-					h2.about__head Лучший атмосферный слой
-					p.about__parag.
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.
-					p.about__parag.
-						Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
-				.about__blockImg
-					img.about__img(src='images/line3.jpg' alt='Продукт')
-		section.productPlus#productPlus(class='clearfix')
+				.row.downOverMounth(class='clearfix')
+				.row(class='clearfix')
+					.about__description
+						h2.about__head 
+							span.first City 
+							span.second of Love
+						.about__text.
+							Malang is the second largest city in East Java province, Indonesia. It has a history dating back to the ancient Mataram Kingdom. The city is famous for its cool temperature. People in East Java sometimes call it "Paris of East Java.
+					.about__blockImg
+						img.about__img(src='images/cityoflove.svg')
+		section.destination
 			.container(class='clearfix')
-				h2.productPlus__head Сплошные плюсы и бонусы
-				.productPlus__items(class='clearfix')
-					.productPlus__item.
-						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
-					.productPlus__item.
-						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
-				.productPlus__items(class='clearfix')
-					.productPlus__item.
-						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
-					.productPlus__item.
-						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
-				.productPlus__items(class='clearfix')
-					.productPlus__item.
-						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
-					.productPlus__item.
-						Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
-		section.description#description(class='clearfix')
-			.container(class='clearfix')
-				h2.description__head Коротко о главном
-				.description__items(class='clearfix')
-					article.description__item
-						.description__item__blockimg
-							img.description__item__img(src='images/product01.jpg' alt='Продукт вид')
-						h3.description__item__head The description for the image
-						.description__item__text.
-							Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
-					article.description__item
-						.description__item__blockimg
-							img.description__item__img(src='images/product02.jpg' alt='Продукт вид')
-						h3.description__item__head The description for the image
-						.description__item__text.
-							Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
-				.description__items(class='clearfix')
-					article.description__item
-						.description__item__blockimg
-							img.description__item__img(src='images/product03.jpg' alt='Продукт вид')
-						h3.description__item__head The description for the image
-						.description__item__text.
-							Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
-					article.description__item
-						.description__item__blockimg
-							img.description__item__img(src='images/product04.jpg' alt='Продукт вид')
-						h3.description__item__head The description for the image
-						.description__item__text.
-							Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
-		section.reviews#reviews
-			.container(class='clearfix')
-				h2.reviews__head Отзывы
-				.reviews__items(class='clearfix')
-					article.reviews__item
-						.reviews__blockImg
-							img.reviews__img(src='images/reviews01.jpg' alt='Персона №1')
-						.reviews__text
-							| Всегда мечтал о таком воздушном коктейле, в котором была бы смешана атмосфера Буэнос-Аэроса, Северное сияние и графическая надстройка над DOS.
-							.reviews__author Билл Голкипер
-					article.reviews__item
-						.reviews__blockImg
-							img.reviews__img(src='images/reviews02.jpg' alt='Персона №2')
-						.reviews__text
-							| Во время проектирования АйФона I, один из сотрудников открыл баночку с Облаком. Нам ничего не оставалось делать, кроме как создать такой сервис.
-							.reviews__author St. Job
-				.reviews__items(class='clearfix')
-					article.reviews__item
-						.reviews__blockImg
-							img.reviews__img(src='images/reviews03.jpg' alt='Персона №3')
-						.reviews__text
-							| Я тоже взял себе на днюху пару баночек из Колумбии, так сказать, на замену воздушным шарикам. Доволен. 
-							.reviews__author Just Iggi
-					article.reviews__item
-						.reviews__blockImg
-							img.reviews__img(src='images/reviews04.jpg' alt='Персона №4')
-						.reviews__text
-							| Не гонялся бы ты, поп, за дешевизной, а потреблял нормальный продукт из Китая.
-							.reviews__author Лама
-		section.buy
-			.container(class='clearfix')
-				h2.buy__head Buy it now
-				.buy__items
-					.buy__item
-						.buy__item__head Standart
-						.buy__item__price $100
-						ol.buy__item__conditions
-							li.buy__item__condition Porro officia cumque sint deleniti; 
-							li.buy__item__condition Тemo facere rem vitae odit;
-							li.buy__item__condition Cum odio, iste quia doloribus autem;
-							li.buy__item__condition Aperiam nulla ea neque.
-						button.buy__button buy
-					.buy__item
-						.buy__item__head Premium
-						.buy__item__price $150
-						ol.buy__item__conditions
-							li.buy__item__condition Porro officia cumque sint deleniti; 
-							li.buy__item__condition Тemo facere rem vitae odit;
-							li.buy__item__condition Cum odio, iste quia doloribus autem;
-							li.buy__item__condition Aperiam nulla ea neque.
-							li.buy__item__condition Porro officia cumque sint deleniti; 
-							li.buy__item__condition Тemo facere rem vitae odit;
-							li.buy__item__condition Cum odio, iste quia doloribus autem; 
-							li.buy__item__condition Aperiam nulla ea neque.
-						button.buy__button buy
-					.buy__item
-						.buy__item__head Lux
-						.buy__item__price $200
-						ol.buy__item__conditions
-							li.buy__item__condition Porro officia cumque sint deleniti; 
-							li.buy__item__condition Тemo facere rem vitae odit;
-							li.buy__item__condition Cum odio, iste quia doloribus autem;
-							li.buy__item__condition Aperiam nulla ea neque.
-							li.buy__item__condition Porro officia cumque sint deleniti; 
-							li.buy__item__condition Тemo facere rem vitae odit;
-							li.buy__item__condition Cum odio, iste quia doloribus autem; 
-							li.buy__item__condition Aperiam nulla ea neque.
-							li.buy__item__condition Porro officia cumque sint deleniti; 
-							li.buy__item__condition Тemo facere rem vitae odit;
-							li.buy__item__condition Cum odio, iste quia doloribus autem; 
-							li.buy__item__condition Aperiam nulla ea neque.
-						button.buy__button buy
+				.row(class='clearfix')
+					.destination__description
+						h2.destination__head 
+							span.first Des
+							span.second tination
+						.destination__text.
+							Being around by many mountain, Malang not only came with mountain vacation, but our beach, cultural spot, and Human Interest is worth to experienced.
+					.destination__regulation see basic regulation
+				.row(class='clearfix')
+					input.destination__search(type='text' placeholder='search destination')
+					.destination__allPlace 
+						span.first ALL PLACE&emsp;/&emsp;
+						span.second RECOMENDED PLACE
+				.row(class='clearfix')
+					article.destination__article
+						.destination__blockImg
+							img.destination__img
+						.destination__aboutPlace
+							.destination__aboutPlace__head Batu
+								.destination__aboutPlace__text
+									p.destination__aboutPlace__parth
+										| is a city located in East Java Province of Indonesia. It is situated about 20 km to the northwest of Malang. Formerly, it was a part of Malang Regency; but in 2001, Batu became an independent city.
+									p.destination__aboutPlace__parth
+										| A population of 190,000 people, it lies on the southern slopes of Gunung Welirang. Its population largely consists of Javanese.
 
-block footer
-	footer.footer(class='clearfix')
-		.container
-			h2.footer__head Contacts
-			form.contacts__form(method='get' action='#' name='contacts')
-				input.contacts__form__name(placeholder='Your name:')
-				input.contacts__form__email(placeholder='Your email:')
-				textarea.contacts__form__messsage(placeholder='Your message:')
-				button(type='submit').contacts__form__submit send
-			.contacts__items
-				.contacts__item.contacts_skype simpleair
-				.contacts__item.contacts_icq 234567
-				.contacts__item.contacts_email
-					a.contacts__link(href='mailto:moneyfornothing@info.com') moneyfornothing@info.com
-				.contacts__item.contacts_tel +8 800 777 88 99
-				ul.social__items
-					each item, key in social
-						li.social__item
-							a.social__link(class='contacts__link_'+item href='http://www.'+key)
-	footer.footerFooter 
-		.copyright &#169; copyright 2017 и все такое
+
+
+
 
 

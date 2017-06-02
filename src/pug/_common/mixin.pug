@@ -1,0 +1,7 @@
+mixin header_menu
+	menu.menu
+		ul.menu__items
+			each item in menu
+				li.menu__item
+					a.menu__item__link(href='#'+item class={active: item === 'Home'})= item
+
