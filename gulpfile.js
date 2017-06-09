@@ -15,6 +15,7 @@ var path = {
 		css: './src/sass/main.scss',
 		js: './src/js/main.js',
 		img: './src/images/**/*.*',
+		video: './src/video/**/*.*',
 		font: './src/fonts/**/*.*'
 	},
 	build: {
@@ -22,6 +23,7 @@ var path = {
 		css: './build/css/',
 		js: './build/js/',
 		img: './build/images/',
+		video: './build/video/',
 		font: './build/fonts/'
 	},
 	watch: {
@@ -29,6 +31,7 @@ var path = {
 		css: './src/sass/**/*.scss',
 		js: './src/js/**/*.js',
 		img: './src/images/**/*.*',
+		video: './src/video/**/*.*',
 		font: './src/fonts/**/*.*'
 	},
 	clean: './build'
@@ -52,7 +55,7 @@ gulp.task('clean', function() {
    .pipe(rimraf());
 });
 
-gulp.task('build', ['build:html', 'build:css', 'build:js', 'build:img', 'build:font']);
+gulp.task('build', ['build:html', 'build:css', 'build:js', 'build:img', 'build:video', 'build:font']);
 
 gulp.task('build:html', function() {
 	gulp.src(path.src.html)
@@ -89,6 +92,12 @@ gulp.task('build:img', function() {
 	.pipe(reload({stream:true}))
 });
 
+gulp.task('build:video', function() {
+	gulp.src(path.src.video)
+	.pipe(gulp.dest(path.build.video))
+	.pipe(reload({stream:true}))
+});
+
 gulp.task('build:font', function() {
 	gulp.src(path.src.font)
 	.pipe(gulp.dest(path.build.font))
@@ -107,6 +116,9 @@ gulp.task('watch', function() {
 	});
 	watch([path.watch.img], function(event, cb) {
 		gulp.start('build:img');
+	});
+	watch([path.watch.video], function(event, cb) {
+		gulp.start('build:video');
 	});
 	watch([path.watch.font], function(event, cb) {
 		gulp.start('build:font');
