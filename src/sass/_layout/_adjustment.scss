@@ -32,9 +32,6 @@ body {
 	}
 }
 .container {
-
-	// outline: 1px solid lime;
-
 	box-sizing: border-box;
 	max-width: 1290px;
 	padding: 0 60px;
@@ -43,6 +40,14 @@ body {
 	@extend %clearfix;
 	.row {
 		@extend %clearfix;
-		// margin-bottom: 142px;
 	}
+}
+.header, 
+.about, 
+.destination, 
+.setIttinery, 
+.contact, 
+.keepintouch, 
+.footer {
+	min-width: 1170px;
 }

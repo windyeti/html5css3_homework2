@@ -25,222 +25,221 @@ block header
 			.header__button SET ITTINERY NOW
 			.downOverMounth
 block main
-	main.main
-		section.about
-			.container(class='clearfix')
-				.row(class='clearfix')
-					.about__description
-						h2.about__head 
-							span.first City 
-							span.second of Love
-						.about__text.
-							Malang is the second largest city in East Java province, Indonesia. It has a history dating back to the ancient Mataram Kingdom. The city is famous for its cool temperature. People in East Java sometimes call it "Paris of East Java.
-					.about__blockImg
-						img.about__img(src='images/cityoflove.svg')
-		section.destination
-			.container(class='clearfix')
-				.row(class='clearfix')
-					.destination__description
-						h2.destination__head 
-							span.first Des
-							span.second tination
-						.destination__text.
-							Being around by many mountain, Malang not only came with mountain vacation, but our beach, cultural spot, and Human Interest is worth to experienced.
-					.destination__regulation see basic regulation
-				.row(class='clearfix')
-					input.destination__search(type='text' placeholder='search destination')
-					.destination__allPlace 
-						span.first ALL PLACE&emsp;/&emsp;
-						span.second RECOMENDED PLACE
-				.row(class='clearfix')
-					article.place
-						.place__blockVideo
-							video.place__video(controls poster='images/posterMountain.jpg')
-								source(src="video/mountain.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
-								source(src="video/mountain.webm" type='video/webm; codecs="vp8, vorbis"')
-								source(src="video/mountain.ogv" type='video/ogg; codecs="theora, vorbis"')
-							.place__shadow 
-								img.place__shadow__img(src='images/shadow.png')
-								span.place__shadow__text see more
-						.place__about
-							.place__about__head.place__about__head__batu Batu
+	section.about
+		.container(class='clearfix')
+			.row(class='clearfix')
+				.about__description
+					h2.about__head 
+						span.first City 
+						span.second of Love
+					.about__text.
+						Malang is the second largest city in East Java province, Indonesia. It has a history dating back to the ancient Mataram Kingdom. The city is famous for its cool temperature. People in East Java sometimes call it "Paris of East Java.
+				.about__blockImg
+					img.about__img(src='images/cityoflove.svg')
+	section.destination
+		.container(class='clearfix')
+			.row(class='clearfix')
+				.destination__description
+					h2.destination__head 
+						span.first Des
+						span.second tination
+					.destination__text.
+						Being around by many mountain, Malang not only came with mountain vacation, but our beach, cultural spot, and Human Interest is worth to experienced.
+				.destination__regulation see basic regulation
+			.row(class='clearfix')
+				input.destination__search(type='text' placeholder='search destination')
+				.destination__allPlace 
+					span.first ALL PLACE&emsp;/&emsp;
+					span.second RECOMENDED PLACE
+			.row(class='clearfix')
+				article.place
+					.place__blockVideo
+						video.place__video(controls poster='images/posterMountain.jpg')
+							source(src="video/mountain.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
+							source(src="video/mountain.webm" type='video/webm; codecs="vp8, vorbis"')
+							source(src="video/mountain.ogv" type='video/ogg; codecs="theora, vorbis"')
+						.place__shadow 
+							img.place__shadow__img(src='images/shadow.png')
+							span.place__shadow__text see more
+					.place__about
+						.place__about__head.place__about__head__batu Batu
+						.place__about__text
+							p.place__about__parth
+								| is a city located in East Java Province of Indonesia. It is situated about 20 km to the northwest of Malang. Formerly, it was a part of Malang Regency; but in 2001, Batu became an independent city.
+							p.place__about__parth
+								| A population of 190,000 people, it lies on the southern slopes of Gunung Welirang. Its population largely consists of Javanese.
+			.row(class='clearfix')
+				article.place.place_left(class='clearfix')
+					.place__blockImg
+						img.place__img(src='images/bromoMountain.jpg')
+						.place__shadow 
+							img.place__shadow__img(src='images/shadow.png')
+							span.place__shadow__text see more
+						.place__about.place__about_left
+							.place__about__head.place__about__head__bromo Bromo
 							.place__about__text
 								p.place__about__parth
-									| is a city located in East Java Province of Indonesia. It is situated about 20 km to the northwest of Malang. Formerly, it was a part of Malang Regency; but in 2001, Batu became an independent city.
-								p.place__about__parth
-									| A population of 190,000 people, it lies on the southern slopes of Gunung Welirang. Its population largely consists of Javanese.
-				.row(class='clearfix')
-					article.place.place_left(class='clearfix')
-						.place__blockImg
-							img.place__img(src='images/bromoMountain.jpg')
-							.place__shadow 
-								img.place__shadow__img(src='images/shadow.png')
-								span.place__shadow__text see more
-							.place__about.place__about_left
-								.place__about__head.place__about__head__bromo Bromo
-								.place__about__text
-									p.place__about__parth
-										span.place__about__startString Mount Bromo
-										| is an active volcano and part of the Tengger massif, in East Java, Indonesia. At 2,329 metres (7,641 ft) it is not the highest peak of the massif, but is the most well known
-						.place__blockImg.place__blockImg_right
-							img.place__img(src='images/bromoMountain2.jpg')
-							.place__shadow 
-								img.place__shadow__img(src='images/shadow.png')
-								span.place__shadow__text see more
-				.row(class='clearfix').pagesNumber
-					.pagesNumber__items
-						span.pagesNumber__item.pageNumber_active 1
-						span.pagesNumber__item
-							a.pagesNumber__link(href='#') 2
-						span.pagesNumber__item
-							a.pagesNumber__link(href='#') 3
-						span.pagesNumber__item
-							a.pagesNumber__link(href='#') 4
-						span.pagesNumber__item
-							a.pagesNumber__link(href='#') 5
-						span.pagesNumber__item.pagesNumber_arrowOne
-							a.pagesNumber__link(href='#')
-						span.pagesNumber__item.pagesNumber_arrowTwo
-							a.pagesNumber__link(href='#')
-		section.setIttinery
-			.container(class='clearfix')
-				.row(class='clearfix')
-					.setIttinery__description
-						h2.setIttinery__head 
-							span.first Set 
-							span.second Ittinery
-						.setIttinery__text
-							.setIttinery__parag Simply drag and drop what you want to visit, and voila we make a ittinery and schedule for your vacation.
-							.setIttinery__parag have a great trip !
-				.row(class='clearfix')
-					.setIttinery__selectedDestinations
-						.setIttinery__wrapper
-							.setIttinery__formAndButton
-								.setIttinery__contantLeft
-									h3.setIttinery__headDestinations Your Ittinery Title Here
-									.setIttinery__dayTime
-										.setIttinery__day Day 1
-										.setIttinery__currentDate 05/29/2015
-									.setIttinery__item
-										.setIttinery__nameDate
-											.setIttinery__name.setIttinery__name_bromo Mt. Bromo
-											.setIttinery__date 03.30 - 09.00
-										.setIttinery__subDestination
-											.setIttinery__add 
-												a.setIttinery__link(href='#') add sub destination
-									.setIttinery__item
-										.setIttinery__nameDate
-											.setIttinery__name.setIttinery__name_batu Batu City
-											.setIttinery__date 10.00 - 15.00
-										.setIttinery__subDestination 
-											.setIttinery__subDetinationItem 
-												| Enjoy Malang while Listening Music
-											.setIttinery__subDetinationItem
-												| Gonna Eat BAKSO
-											.setIttinery__add 
-												a.setIttinery__link(href='#') add sub destination
-									.setIttinery__dayTime
-										.setIttinery__day Day 2
-										.setIttinery__currentDate 05/29/2015
-									.setIttinery__item.setIttinery__item_dragAndDrop Drag Destination Here
-								button.setIttinery__button_print.button Print
-								button.setIttinery__button_saveAsPdf.button SAVE AS PDF
-						.setIttinery__listDestinations
-							.setIttinery__contantRight
-								h3.setIttinery__headList List of Destination
-								.setIttinery__iconZoom
-								.setIttinery__sort 
-									span.setIttinery__sortBy sort by : 
-									span.setIttinery__category Mountain
-								.setIttinery__listItem
-									.setIttinery__listName Mt. Bromo
-									.setIttinery__details view details
-									.setIttinery__estimatedTime estimated time: 
-										span.setIttinery__valueHours 5 Hours
-								.setIttinery__listItem
-									.setIttinery__listName Mt. Panderman
-									.setIttinery__details view details
-									.setIttinery__estimatedTime estimated time: 
-										span.setIttinery__valueHours 5 Hours
-								.setIttinery__listItem
-									.setIttinery__listName Mt. Semeru
-									.setIttinery__details view details
-									.setIttinery__estimatedTime estimated time: 
-										span.setIttinery__valueHours 5 Hours
-								.setIttinery__listItem
-									.setIttinery__listName Mt. Panderman
-									.setIttinery__details view details
-									.setIttinery__estimatedTime estimated time: 
-										span.setIttinery__valueHours 5 Hours
-								.setIttinery__listItem
-									.setIttinery__listName Mt. Panderman
-									.setIttinery__details view details
-									.setIttinery__estimatedTime estimated time: 
-										span.setIttinery__valueHours 5 Hours
-								.setIttinery__listItem
-									.setIttinery__listName Mt. Panderman
-									.setIttinery__details view details
-									.setIttinery__estimatedTime estimated time: 
-										span.setIttinery__valueHours 5 Hours='#')
-		section.contact
-			.map
-				script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae0b61a36d6b9d73ab7e2dc00e14a16d423c6faf8271ffd263a5efe11f54e8e55&amp;width=100%25&amp;height=666&amp;lang=ru_RU&amp;scroll=true")
-				.map__colorBlock
-			.container(class='clearfix')
-				.row(class='clearfix')
-						h2.contact__head Contact
-				.row.contact__wrapper(class='clearfix')
-					form.form(method='post' action='#' name='contact')
-						input.form__email(type='email' required placeholder='Your mail here')
-						input.form__company(type='text' required placeholder='Company')
-						input.form__subject(type='text' required placeholder='Subject')
-						textarea.form__message(required placeholder='Message')
-						button.form__button.button SEND MESSAGE
-					.or 
-						.or__text OR
-					.youcanfindushere
-						h3.youcanfindushere__head You Can Find Us Here
-						ul.youcanfindushere__items
-							li.youcanfindushere__item.youcanfindushere__item_iconHouse Jl.Danau Bratan sekian nomer sekian, Sawojajar Malang
-								.youcanfindushere__item__second FIND ON MAPS
-							li.youcanfindushere__item.youcanfindushere__item_iconPersone (+62) 8816723812
-							li.youcanfindushere__item.youcanfindushere__item_iconPersone (+62) 8512371632
-		section.keepintouch
-			.container(class='clearfix')
-				.row(class='clearfix')
-					.keepintouch__description
-						h2.keepintouch__head Keep in Touch
-						.keepintouch__text We Will Give you latest information about Malang
-					form.keepintouch__form
-						input.keepintouch__button(type='button' placeholder='Type Email Here for Subscribe')
-						input.keepintouch__input(type='text' placeholder='Type Email Here for Subscribe')
-		footer.footer
-			.container(class='clearfix')
-				.row(class='clearfix')
-					ul.terms
-						li.term
-							a.term__link(href='#') Term &amp; Condition
-						li.term
-							a.term__link(href='#') Policy
-						li.term
-							a.term__link(href='#') Privacy
-					ul.social
-						li.social_item
-							a.social__link.social__link_inst(href='#')
-								span.fa-stack.fa-lg
-									i.fa.fa-circle.fa-stack-2x
-									i.fa.fa-instagram.fa-stack-1x.fa-inverse(aria-hidden="true")
-						li.social_item
-							a.social__link.social__link_fb(href='#')
-								span.fa-stack.fa-lg
-									i.fa.fa-circle.fa-stack-2x
-									i.fa.fa-twitter.fa-stack-1x.fa-inverse(aria-hidden="true")
-						li.social_item
-							a.social__link.social__link_tw(href='#')
-								span.fa-stack.fa-lg
-									i.fa.fa-circle.fa-stack-2x
-									i.fa.fa-facebook.fa-stack-1x.fa-inverse(aria-hidden="true")
-				.copyright copyright@YokMalang. Allright Reserved. 2015
+									span.place__about__startString Mount Bromo
+									| is an active volcano and part of the Tengger massif, in East Java, Indonesia. At 2,329 metres (7,641 ft) it is not the highest peak of the massif, but is the most well known
+					.place__blockImg.place__blockImg_right
+						img.place__img(src='images/bromoMountain2.jpg')
+						.place__shadow 
+							img.place__shadow__img(src='images/shadow.png')
+							span.place__shadow__text see more
+			.row(class='clearfix').pagesNumber
+				.pagesNumber__items
+					span.pagesNumber__item.pageNumber_active 1
+					span.pagesNumber__item
+						a.pagesNumber__link(href='#') 2
+					span.pagesNumber__item
+						a.pagesNumber__link(href='#') 3
+					span.pagesNumber__item
+						a.pagesNumber__link(href='#') 4
+					span.pagesNumber__item
+						a.pagesNumber__link(href='#') 5
+					span.pagesNumber__item.pagesNumber_arrowOne
+						a.pagesNumber__link(href='#')
+					span.pagesNumber__item.pagesNumber_arrowTwo
+						a.pagesNumber__link(href='#')
+	section.setIttinery
+		.container(class='clearfix')
+			.row(class='clearfix')
+				.setIttinery__description
+					h2.setIttinery__head 
+						span.first Set 
+						span.second Ittinery
+					.setIttinery__text
+						.setIttinery__parag Simply drag and drop what you want to visit, and voila we make a ittinery and schedule for your vacation.
+						.setIttinery__parag have a great trip !
+			.row(class='clearfix')
+				.setIttinery__selectedDestinations
+					.setIttinery__wrapper
+						.setIttinery__formAndButton
+							.setIttinery__contantLeft
+								h3.setIttinery__headDestinations Your Ittinery Title Here
+								.setIttinery__dayTime
+									.setIttinery__day Day 1
+									.setIttinery__currentDate 05/29/2015
+								.setIttinery__item
+									.setIttinery__nameDate
+										.setIttinery__name.setIttinery__name_bromo Mt. Bromo
+										.setIttinery__date 03.30 - 09.00
+									.setIttinery__subDestination
+										.setIttinery__add 
+											a.setIttinery__link(href='#') add sub destination
+								.setIttinery__item
+									.setIttinery__nameDate
+										.setIttinery__name.setIttinery__name_batu Batu City
+										.setIttinery__date 10.00 - 15.00
+									.setIttinery__subDestination 
+										.setIttinery__subDetinationItem 
+											| Enjoy Malang while Listening Music
+										.setIttinery__subDetinationItem
+											| Gonna Eat BAKSO
+										.setIttinery__add 
+											a.setIttinery__link(href='#') add sub destination
+								.setIttinery__dayTime
+									.setIttinery__day Day 2
+									.setIttinery__currentDate 05/29/2015
+								.setIttinery__item.setIttinery__item_dragAndDrop Drag Destination Here
+							button.setIttinery__button_print.button Print
+							button.setIttinery__button_saveAsPdf.button SAVE AS PDF
+					.setIttinery__listDestinations
+						.setIttinery__contantRight
+							h3.setIttinery__headList List of Destination
+							.setIttinery__iconZoom
+							.setIttinery__sort 
+								span.setIttinery__sortBy sort by : 
+								span.setIttinery__category Mountain
+							.setIttinery__listItem
+								.setIttinery__listName Mt. Bromo
+								.setIttinery__details view details
+								.setIttinery__estimatedTime estimated time: 
+									span.setIttinery__valueHours 5 Hours
+							.setIttinery__listItem
+								.setIttinery__listName Mt. Panderman
+								.setIttinery__details view details
+								.setIttinery__estimatedTime estimated time: 
+									span.setIttinery__valueHours 5 Hours
+							.setIttinery__listItem
+								.setIttinery__listName Mt. Semeru
+								.setIttinery__details view details
+								.setIttinery__estimatedTime estimated time: 
+									span.setIttinery__valueHours 5 Hours
+							.setIttinery__listItem
+								.setIttinery__listName Mt. Panderman
+								.setIttinery__details view details
+								.setIttinery__estimatedTime estimated time: 
+									span.setIttinery__valueHours 5 Hours
+							.setIttinery__listItem
+								.setIttinery__listName Mt. Panderman
+								.setIttinery__details view details
+								.setIttinery__estimatedTime estimated time: 
+									span.setIttinery__valueHours 5 Hours
+							.setIttinery__listItem
+								.setIttinery__listName Mt. Panderman
+								.setIttinery__details view details
+								.setIttinery__estimatedTime estimated time: 
+									span.setIttinery__valueHours 5 Hours='#')
+	section.contact
+		.map
+			script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae0b61a36d6b9d73ab7e2dc00e14a16d423c6faf8271ffd263a5efe11f54e8e55&amp;width=100%25&amp;height=666&amp;lang=ru_RU&amp;scroll=true")
+			.map__colorBlock
+		.container(class='clearfix')
+			.row(class='clearfix')
+					h2.contact__head Contact
+			.row.contact__wrapper(class='clearfix')
+				form.form(method='post' action='#' name='contact')
+					input.form__email(type='email' required placeholder='Your mail here')
+					input.form__company(type='text' required placeholder='Company')
+					input.form__subject(type='text' required placeholder='Subject')
+					textarea.form__message(required placeholder='Message')
+					button.form__button.button SEND MESSAGE
+				.or 
+					.or__text OR
+				.youcanfindushere
+					h3.youcanfindushere__head You Can Find Us Here
+					ul.youcanfindushere__items
+						li.youcanfindushere__item.youcanfindushere__item_iconHouse Jl.Danau Bratan sekian nomer sekian, Sawojajar Malang
+							.youcanfindushere__item__second FIND ON MAPS
+						li.youcanfindushere__item.youcanfindushere__item_iconPersone (+62) 8816723812
+						li.youcanfindushere__item.youcanfindushere__item_iconPersone (+62) 8512371632
+	section.keepintouch
+		.container(class='clearfix')
+			.row(class='clearfix')
+				.keepintouch__description
+					h2.keepintouch__head Keep in Touch
+					.keepintouch__text We Will Give you latest information about Malang
+				form.keepintouch__form
+					input.keepintouch__button(type='button' placeholder='Type Email Here for Subscribe')
+					input.keepintouch__input(type='text' placeholder='Type Email Here for Subscribe')
+	footer.footer
+		.container(class='clearfix')
+			.row(class='clearfix')
+				ul.terms
+					li.term
+						a.term__link(href='#') Term &amp; Condition
+					li.term
+						a.term__link(href='#') Policy
+					li.term
+						a.term__link(href='#') Privacy
+				ul.social
+					li.social_item
+						a.social__link.social__link_inst(href='#')
+							span.fa-stack.fa-lg
+								i.fa.fa-circle.fa-stack-2x
+								i.fa.fa-instagram.fa-stack-1x.fa-inverse(aria-hidden="true")
+					li.social_item
+						a.social__link.social__link_fb(href='#')
+							span.fa-stack.fa-lg
+								i.fa.fa-circle.fa-stack-2x
+								i.fa.fa-twitter.fa-stack-1x.fa-inverse(aria-hidden="true")
+					li.social_item
+						a.social__link.social__link_tw(href='#')
+							span.fa-stack.fa-lg
+								i.fa.fa-circle.fa-stack-2x
+								i.fa.fa-facebook.fa-stack-1x.fa-inverse(aria-hidden="true")
+			.copyright copyright@YokMalang. Allright Reserved. 2015
 
 
 
