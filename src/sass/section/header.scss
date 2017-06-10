@@ -3,131 +3,117 @@
 	box-sizing: border-box;
 	// max-width: 1440px;
 	min-width: 1170px;
-	height: 737px;
+	height: 729px;
 	margin: 0 auto;
-	padding-top: 40px;
+	padding-top: 34px;
 	background-color: $limegreen;
 	background-image: url(../images/mounth.png), url(../images/gradient-menu.png);
 	background-repeat: no-repeat, repeat-x;
 	background-position: 50% 100%, 0% 0%;
 	// background-size: cover, auto auto;
 
-	.container {
-		box-sizing: border-box;
-		max-width: 1290px;
-		padding: 0 60px;
-		margin: 0 auto;
-		color: $darkblue;
-		@extend %clearfix;
-		.downOverMounth {
-			position: absolute;
-			bottom: 0;
-			width: 100%;
-			max-width: 1290px;
-			height: 42px;
-			background-color: rgba(255, 255, 255, 0.9);
-			// margin-top: -42px;
-			margin-left: -60px;
-			// padding: 0 60px;
-		}
-
-		.row {
-			@extend %clearfix;
-			margin-bottom: 142px;
-		}
-		.logo {
-			float: left;
-			font-size: 166%;
-			padding-left: 3px;
-			padding-top: 9px;	
-			.logo__link {
-				text-decoration: none;
-				color: #fff;
-				transition: all 1s;	
-				&:hover {
-					color: $darkgreen;
-				}
-			}
-			.firstParth {
-				font-family: 'Montserrat';
-			}
-			.secondParth {
-				font-family: 'Montserrat';
-				font-weight: 600;
-
-			}
-		}
-		.avatar {
-			position: relative;
-			float: right;
-			margin-right: 15px;
-			width: 44px;
-			height: 44px;
-			transition: all 1s;
-			.avatar__img {
-				width: 100%;
-				border-radius: 50%;
-			}
-			&:after {
-				content: " ";
-				position: absolute;
-				top: 18px;
-				left: 50px;
-				border: 4px solid transparent;
-				border-top: 7px solid #fff;	
-				transition: all 1s;		
-			}
-			&:hover {
-				@include transform(scale(1.2));
-				&:after {;
-					border-top: 7px solid $darkgreen;			
-				}
-			}
-
-		}
-		.menu {
-			font-family: 'Lato';
-			font-weight: 600;
-			float: right;
-			margin: 0;
-			margin-right: 35px;
-			padding: 0;
-			width: 70%;
-			// line-height: .3em;
-			.menu__items {
-				margin: 0;
-				padding: 0;
-			}
-			.menu__item {
-				float: right;
-				list-style: none;
-				padding-left: 23px
-			}
-			.menu__item__link {
-				box-sizing: border-box;
-				text-decoration: none;
-				color: #fff;
-				font-size: 91.5%;
-				line-height: 257.5%;
-				padding: 12px 20px;
-				width: 20%;
-				&.active {
-					border: 3px solid #fff;
-					border-radius: 25px;
-					&:hover {
-						border: 3px solid $darkgreen;
-						border-radius: 25px;
-						padding: 12px 20px;
-					}
-				}
-				&:hover {
-					border: 3px solid $darkgreen;
-					border-radius: 25px;
-					padding: 12px 17px;
-				}
-			}
+.downOverMounth {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	max-width: 1290px;
+	height: 42px;
+	background-color: rgba(255, 255, 255, 0.9);
+	// margin-top: -42px;
+	margin-left: -60px;
+	// padding: 0 60px;
+}
+.logo {
+	float: left;
+	font-size: 166%;
+	padding-left: 3px;
+	padding-top: 9px;	
+	.logo__link {
+		text-decoration: none;
+		color: #fff;
+		transition: all 1s;	
+		&:hover {
+			color: $darkgreen;
 		}
 	}
+	.firstParth {
+		font-family: 'Montserrat';
+	}
+	.secondParth {
+		font-family: 'Montserrat';
+		font-weight: 600;
+
+	}
+}
+.avatar {
+	position: relative;
+	float: right;
+	margin-right: 15px;
+	width: 44px;
+	height: 44px;
+	transition: all 1s;
+	.avatar__img {
+		width: 100%;
+		border-radius: 50%;
+	}
+	&:after {
+		content: " ";
+		position: absolute;
+		top: 18px;
+		left: 50px;
+		border: 4px solid transparent;
+		border-top: 7px solid #fff;	
+		transition: all 1s;		
+	}
+	&:hover {
+		@include transform(scale(1.2));
+		&:after {;
+			border-top: 7px solid $darkgreen;			
+		}
+	}
+
+}
+.menu {
+	font-family: 'Lato';
+	font-weight: 600;
+	float: right;
+	margin: 0 35px 150px 0;
+	padding: 0;
+	width: 70%;
+	// line-height: .3em;
+	.menu__items {
+		margin: 0;
+		padding: 0;
+	}
+	.menu__item {
+		float: right;
+		list-style: none;
+		padding-left: 23px
+	}
+	.menu__item__link {
+		box-sizing: border-box;
+		text-decoration: none;
+		color: #fff;
+		font-size: 91.5%;
+		line-height: 257.5%;
+		padding: 12px 20px;
+		width: 20%;
+		&.active {
+			border: 3px solid #fff;
+			border-radius: 25px;
+			&:hover {
+				border: 3px solid $darkgreen;
+				border-radius: 25px;
+				padding: 12px 20px;
+			}
+		}
+		&:hover {
+			border: 3px solid $darkgreen;
+			border-radius: 25px;
+			padding: 12px 17px;
+		}
+	}
+}
 	.head {
 		font-family: 'ChunkFive-Roman';
 		text-align: center;
@@ -148,7 +134,7 @@
 		line-height: 197%;
 		margin-bottom: 40px;
 	}
-	.button {
+	.header__button {
 		font-family: 'Lato';
 		font-weight: 900;
 		text-align: center;
