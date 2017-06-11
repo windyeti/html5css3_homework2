@@ -6,6 +6,10 @@
 	float: right;
 	width: 48.7%;
 	font-weight: 400;
+	@media screen and (max-width: 992px) {
+		float: none;
+		width: 100%;
+	}
 }
 .about__head {
 	font-family: 'ChunkFive-Roman';
@@ -21,6 +25,15 @@
 	width: 39%;
 	padding-left: 46px;
 	margin-top: -10px;
+	@media screen and (max-width: 992px) {
+		margin-top: 40px;
+		padding-left: 0;
+		width: 50%;
+	}
+	@media screen and (max-width: 749px) {
+		width: 100%;
+		
+	}
 }
 .about__img {
 	width: 100%;
@@ -35,6 +48,12 @@
 		padding-left: 100px;
 		padding-bottom: 57px;
 		width: 58.4%;
+		@media screen and (max-width: 992px) {
+			padding-bottom: 10px;
+		}
+		@media screen and (max-width: 749px) {
+			padding-left: 0;
+		}
 	}
 	&__head {
 		font-family: 'ChunkFive-Roman';
@@ -50,6 +69,15 @@
 		padding: 28px 108px 3px 28px;
 		background: url(../images/seeBasic.png) no-repeat 0 27px;
 		color:  #aeaeae;
+		@media screen and (max-width: 992px) {
+			float: left;
+			padding-left: 28px;
+			margin-left: 100px;
+			margin-bottom: 40px;
+		}
+		@media screen and (max-width: 749px) {
+			margin-left: 0;
+		}
 	}
 	&__search {
 	    float: left;
@@ -66,6 +94,10 @@
 		&:focus {
 			outline: none;
 			border: 1px solid $darkgreen;
+		}
+		@media screen and (max-width: 749px) {
+			margin-left: 0;
+			width: 25%;
 		}
 	}
 	&__allPlace {
@@ -92,6 +124,15 @@
 			// display: block;
 			border: 10px solid transparent;
 			border-right: 10px solid #f4f9fb;
+		}
+		@media screen and (max-width: 992px) {
+			float: none;
+			&:after {
+				content: none;
+			}
+		}
+		@media screen and (max-width:749px) {
+			display: none;
 		}
 	}
 	.place__shadow {
@@ -147,15 +188,6 @@
 		width: 57.26%;
 		overflow: hidden;
 		// outline: 1px solid red;
-		&:before {
-			content: "";
-			position: absolute;
-			top: 171px;
-			left: 331px;
-			// display: block;
-			border: 10px solid transparent;
-			border-left: 10px solid #f4f9fb;
-		}
 	}
 	.place__img,
 	.place__shadow__img {
@@ -175,6 +207,19 @@
 		padding-top: 43px;
 		padding-left: 29px;
 		padding-right: 20px;
+		&:after {
+			content: "";
+			position: relative;
+			top: 171px;
+			left: 0px;
+			// display: block;
+			border: 10px solid transparent;
+			border-left: 10px solid #f4f9fb;
+		}
+		@media screen and (max-width: 992px) {
+			position: static;
+			width: 100%;
+		}
 	}
 	.place__blockImg_right {
 		float: right;
@@ -243,6 +288,10 @@
 	width: 57.26%;
 	border-radius: 5px;
 	overflow: hidden;
+	@media screen and (max-width:749px) {
+		float: none;
+		width: 100%;
+	}
 }
 .setIttinery__contantLeft {
 	background: #ffffa6;
@@ -295,6 +344,9 @@
 	text-align: right;
 	position: relative;
 	z-index: 1;
+	@media screen and (max-width: 900px) {
+		font-size: 68%;
+	}
 }
 .setIttinery__name {
 	float: left;
@@ -385,6 +437,10 @@
 	float: right;
 	width: 40.17%;
 	// outline: 1px solid red;
+	@media screen and (max-width:749px) {
+		// float: none;
+		width: 100%;
+	}
 }
 .setIttinery__headList {
 	text-align: center;
@@ -435,6 +491,10 @@
 	color: #b9b9b9;
 	background: url("../images/bromoIcon.svg") no-repeat 123% 14px;
 	background-size: 45% 45%;
+	@media screen and (max-width: 900px) {
+	background: url("../images/bromoIcon.svg") no-repeat 100% 14px;
+	background-size: 30% 30%;
+	}
 }
 .setIttinery__listName {
 	font-size: 150%;
@@ -458,6 +518,9 @@
 	margin-top: 100px;
 	padding-bottom: 73px;
 	// outline: 1px solid blue;
+	@media screen and (max-width: 992px) {
+		background-color: #01a2a6;
+	}
 }
 .map {
 	width: 100%;
@@ -488,6 +551,12 @@
 	float: left;
 	width: 40.17%;
 	// outline: 1px solid red;
+	@media screen and (max-width: 992px) {
+	}
+	@media screen and (max-width: 992px) {
+		float: none;
+		width: 100%;
+	}
 }
 .form__email,
 .form__company,
@@ -530,6 +599,14 @@
 	// outline: 1px solid red;
 	text-align: center;
 	text-transform: uppercase;
+	@media screen and (max-width: 992px) {
+		clear: both;
+	}
+	@media screen and (max-width: 992px) {
+		float: none;
+		width: 100%;
+		height: 100px;
+	}
 }
 .or__text {
 	position: relative;
@@ -541,6 +618,10 @@
 	float: right;
 	width: 40.17%;
 	// outline: 1px solid red;
+	@media screen and (max-width: 992px) {
+		float: none;
+		width: 100%;
+	}
 }
 .youcanfindushere__head {
 	color:  #ffffff;
@@ -584,7 +665,16 @@
 	float: right;
 	width: 46.23%;
 	margin-top: 65px;
-}
+	@media screen and (max-width: 992px) {
+		float: none;
+		margin-left: -60px;
+		// width: 80%;
+		// margin-top: 20px;
+	}
+	@media screen and (max-width: 749px) {
+		width: 100%;
+	}
+}	
 .keepintouch__input {
 	box-sizing: border-box;
 	float: right;

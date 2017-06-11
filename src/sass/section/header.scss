@@ -79,6 +79,12 @@
 	margin: 0 35px 150px 0;
 	padding: 0;
 	width: 70%;
+	@media screen and (max-width: 992px) {
+		width: 100%;
+		margin-top: 20px;
+		margin-right: 0;
+		margin-bottom: 100px;
+	}
 	// line-height: .3em;
 	.menu__items {
 		margin: 0;
@@ -87,7 +93,12 @@
 	.menu__item {
 		float: right;
 		list-style: none;
-		padding-left: 23px
+		padding-left: 23px;
+		@media screen and (max-width: 992px) {
+			padding-left: 0;
+			width: 20%;
+			text-align: center;
+		}
 	}
 	.menu__item__link {
 		box-sizing: border-box;
@@ -111,6 +122,10 @@
 			border-radius: 25px;
 			padding: 12px 17px;
 		}
+	}
+	@media screen and (max-width:749px) {
+		margin: 20px 0 60px;
+		width: 100%;
 	}
 }
 	.head {
@@ -146,10 +161,16 @@
 		border: 0px;
 		border-radius: 37px;
 		color:  #000;
-		&:hover {
+		&:hover {	
 			cursor: pointer;
 			background: #fff;
 			color: $darkgreen;
+		}
+		@media screen and (max-width: 992px) {
+			// font-size: 75%;
+			padding: 0 5%;
+			width: 40%;
+			font-size: 80%;
 		}
 	}
 }

@@ -50,4 +50,13 @@ body {
 .keepintouch, 
 .footer {
 	min-width: 1170px;
+	@media screen and (max-width: 992px) {
+		min-width: 749px;
+	}
+	@media screen and (max-width:749px) {
+		min-width: 500px;
+	}
+	@media screen and (max-width:401px) {
+		min-width: 399px;
+	}
 }
